@@ -2,8 +2,8 @@ import { ApplicationRef, Component, signal } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.less']
+  templateUrl: '../templates/app.component.html',
+  styleUrls: ['../styles/app.component.less']
 })
 export class AppComponent {
   tickCount = signal(0);
