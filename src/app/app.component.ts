@@ -6,7 +6,6 @@ import { ApplicationRef, Component } from '@angular/core';
   styleUrls: ['./app.component.less']
 })
 export class AppComponent {
-
   constructor(private appRef: ApplicationRef) {
     setInterval(() => {
       this.appRef.tick();
