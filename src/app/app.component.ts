@@ -1,4 +1,4 @@
-import { ApplicationRef, Component } from '@angular/core';
+import { ApplicationRef, Component, signal } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,9 +6,12 @@ import { ApplicationRef, Component } from '@angular/core';
   styleUrls: ['./app.component.less']
 })
 export class AppComponent {
+  tickCount = signal(0);
+
   constructor(private appRef: ApplicationRef) {
     setInterval(() => {
       this.appRef.tick();
-    }, 50);
+      this.tickCount.update(count => count + 1);
+    }, 500);
   }
 }
