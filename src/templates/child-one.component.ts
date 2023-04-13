@@ -1,0 +1,1 @@
+export default "<p>child-one works!</p><button type=\"button\" (click)=\"toggleShowText()\">Click</button><div class=\"container\" *ngif=\"isShow\">{{text}}</div>"

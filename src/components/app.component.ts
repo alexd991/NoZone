@@ -14,4 +14,9 @@ export class AppComponent {
       this.tickCount.update(count => count + 1);
     }, 500);
   }
+
+  logDetectChanges() {
+    console.log('App Root has been checked');
+    return true;
+  }
 }

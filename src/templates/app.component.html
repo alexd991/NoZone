@@ -1,3 +1,4 @@
 <div class="content">
-  <!-- {{count()}} -->
+  <ng-container *ngIf="logDetectChanges()"></ng-container>
+  <app-child-one [text]="tickCount().toString()"></app-child-one>
 </div>
